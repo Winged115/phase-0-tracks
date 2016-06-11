@@ -1,5 +1,5 @@
 main.dress_up {
-	position: relative
+	position: relative;
 }
 section#octopus {
 	position: absolute;
@@ -9,7 +9,7 @@ section#octopus {
 }
 section#hat {
 	position: absolute;
-	margin-left: 38%;
+	margin-left: 38.5%;
 	margin-top: 70px;
 }
 section#glasses {
