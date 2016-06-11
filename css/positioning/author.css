@@ -1,0 +1,12 @@
+section#octopus {
+	position: fixed;
+	margin-left: 40%;
+	border: 1px solid: black;
+	z-index:-1;
+}
+section#hat {
+	margin-left: 40%;
+}
+section#glasses {
+	margin-left: 45%;
+}
