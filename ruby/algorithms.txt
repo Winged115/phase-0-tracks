@@ -10,14 +10,20 @@ Important notes to consider:
 Algorithm/psuedocode:
 -Identify which floor you are on, call it c_floor (current_floor)
 -Identify which floor you want to go to, call it d_floor.(desired_floor)
-	-Until c_floor equals d_floor use elevator.
+	-Until c_floor equals d_floor:
 		-If d_floor is above c_floor:
 			-input up_arrow
-			-when elevator arrives at c_floor enter elevator
-			-select input for d_floor.
+			-when elevator arrives at c_floor enter the elevator.
+			-press the button with the corresponding input of d_floor
 		-If d_floor is below c_floor:
 			-input down_arrow
-			-when elevator arrives at c_floor enter elevator
-			-select input for d_floor.
+			-when elevator arrives at c_floor enter the elevator.
+			-press the button with the corresponding input of d_floor
+	-When c_floor equals d_floor:
+		-exit elevator
+			
+#so far I’m thinking in terms of a ruby method at this moment if its called Elevator(c_floor, d_floor).UNTIL c_floor == d_floor IF c_floor > d_floor: c_floor = c_floor - 1 ELSE c_floor < d_floor: c_floor = c_floor + 1 END END END
+
+
 
 
