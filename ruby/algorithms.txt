@@ -1,0 +1,9 @@
+Commands to a robot on how to use an elevator.
+Important notes to consider: 
+~An elevator is a tool for traveling up and down floors of a building.
+~Each floor is denoted with a symbol, usually a combination of integers and strings Example :L=Lobby(ground floor) B1-BX=floors below lobby 1-X=floors above lobby.
+~The elevator could possibly be traveling up or down.
+~The input you press is your desired floor to exit.
+~Before you enter the elevator it has two inputs either an up symbol or a down symbol, the two exceptions being if you are either on the top or bottom floor.
+~Before entering an elevator you must decide if your desired floor is above or below the floor you are currently on, then press the appropriate input(up or down symbol).
+
