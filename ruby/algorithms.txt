@@ -32,27 +32,21 @@ Common Task Algorithm: Choosing What to Eat For Lunch (I work at a grocery store
 -Identify if I’m feeling healthy or don’t care
 -Identify if I’m willing to spend more than 10 dollars
 	-If I’m feeling hungry, healthy, and willing to spend more than 10 dollars:
-		-select an avocado
-		-select canned salmon(no salt/in water)
-		-select cold pressed green juice
-		-select inner peas (this may give away where I work).
+		-select an avocado,canned salmon(no salt/in water), cold pressed green juice, and inner peas #this may give away where I work.
 	-If I’m feeling hungry, don’t care, and willing to spend more than 10 dollars
 		-go to Five Guys
 	-If I’m feeling hungry, healthy, and willing to spend less than 10 dollars.
-		-select an avocado, baby carrots and an apple
-		-select a sparkling water
+		-select an avocado, baby carrots, an apple, and sparkling water
 	-If I’m feeling hungry, don’t care, and willing to spend less than 10 dollars.
-		-go to snacks buy a bag of potato chips
-		-go to juice and grab 2 juice packs
+		-select a bag of potato chips, and 2 juice packs
 	-If I’m not feeling hungry, but healthy, and am willing to spend more than 10 dollars.
 		-go to The Artist Cafe
 	-If I’m not feeling hungry, don’t care, and am willing to spend more than 10 dollars.
 		-No food
 	-If I’m not feeling hungry, but healthy and am willing to spend less than 10 dollars.
-		-go to produce select an apple and banana
+		-select an apple and a banana
 	-If I’m not feeling hungry, don’t care, and am willing to spend less than 10 dollars.
-		-go to bread and select a pretzel bun
-		-go to frozen and select chocolate covered bananas
+		-select a pretzel, and chocolate covered bananas
 -Eat what I have until I feel sated
 
 
