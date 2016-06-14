@@ -1,0 +1,54 @@
+Commands to a robot on how to use an elevator.
+Important notes to consider: 
+~An elevator is a tool for traveling up and down floors of a building.
+~Each floor is denoted with a symbol, usually a combination of integers and strings Example :L=Lobby(ground floor) B1-BX=floors below lobby 1-X=floors above lobby.
+~The elevator could possibly be traveling up or down.
+~The input you press is your desired floor to exit.
+~Before you enter the elevator it has two inputs either an up symbol or a down symbol, the two exceptions being if you are either on the top or bottom floor.
+~Before entering an elevator you must decide if your desired floor is above or below the floor you are currently on, then press the appropriate input(up or down symbol).
+~floors have a floor indicator outside of the elevator to denote which floor you are on.
+Algorithm/psuedocode:
+-Identify which floor you(robot) are on, call it c_floor (current_floor)
+-Identify which floor you(robot) want to go to, call it d_floor.(desired_floor)
+	-Until c_floor equals d_floor(Until you are on your desired floor):
+		-If d_floor is above c_floor:
+			-input up_arrow
+			-when elevator arrives(You{robot} will know because it will make a *ding* sound) at c_floor enter the elevator.
+			-press the button with the corresponding input of d_floor
+			-wait in elevator(you{robot} will hear nasty Muzak playing)
+		-If d_floor is below c_floor:
+			-input down_arrow
+			-when elevator arrives(same *ding* noise) at c_floor enter the elevator.
+			-press the button with the corresponding input of d_floor
+			-wait in elevator(same torturous Muzak)
+	-When c_floor equals d_floor:
+		-exit elevator
+			
+#so far I’m thinking in terms of a ruby method at this moment if its called Elevator(c_floor, d_floor).UNTIL c_floor == d_floor IF c_floor > d_floor: c_floor = c_floor - 1 ELSE c_floor < d_floor: c_floor = c_floor + 1 END END END
+
+Common Task Algorithm: Choosing What to Eat For Lunch (I work at a grocery store, so the steps begin inside the building)
+
+-Identify if I’m hungry or not hungry
+-Identify if I’m feeling healthy or don’t care
+-Identify if I’m willing to spend more than 10 dollars
+	-If I’m feeling hungry, healthy, and willing to spend more than 10 dollars:
+		-select an avocado,canned salmon(no salt/in water), cold pressed green juice, and inner peas #this may give away where I work.
+	-If I’m feeling hungry, don’t care, and willing to spend more than 10 dollars
+		-go to Five Guys
+	-If I’m feeling hungry, healthy, and willing to spend less than 10 dollars.
+		-select an avocado, baby carrots, an apple, and sparkling water
+	-If I’m feeling hungry, don’t care, and willing to spend less than 10 dollars.
+		-select a bag of potato chips, and 2 juice packs
+	-If I’m not feeling hungry, but healthy, and am willing to spend more than 10 dollars.
+		-go to The Artist Cafe
+	-If I’m not feeling hungry, don’t care, and am willing to spend more than 10 dollars.
+		-No food
+	-If I’m not feeling hungry, but healthy and am willing to spend less than 10 dollars.
+		-select an apple and a banana
+	-If I’m not feeling hungry, don’t care, and am willing to spend less than 10 dollars.
+		-select a pretzel, and chocolate covered bananas
+-Eat what I have until I feel sated
+
+
+
+
