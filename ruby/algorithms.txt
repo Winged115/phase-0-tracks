@@ -6,4 +6,18 @@ Important notes to consider:
 ~The input you press is your desired floor to exit.
 ~Before you enter the elevator it has two inputs either an up symbol or a down symbol, the two exceptions being if you are either on the top or bottom floor.
 ~Before entering an elevator you must decide if your desired floor is above or below the floor you are currently on, then press the appropriate input(up or down symbol).
+~floors have a floor indicator outside of the elevator to denote which floor you are on.
+Algorithm/psuedocode:
+-Identify which floor you are on, call it c_floor (current_floor)
+-Identify which floor you want to go to, call it d_floor.(desired_floor)
+	-Until c_floor equals d_floor use elevator.
+		-If d_floor is above c_floor:
+			-input up_arrow
+			-when elevator arrives at c_floor enter elevator
+			-select input for d_floor.
+		-If d_floor is below c_floor:
+			-input down_arrow
+			-when elevator arrives at c_floor enter elevator
+			-select input for d_floor.
+
 
