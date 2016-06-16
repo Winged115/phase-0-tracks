@@ -1,0 +1,30 @@
+header {
+  font-family: "GothicCentury", GothicCentury, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+section.column-1 {
+  max-width: 47%;
+  display: inline-block;
+  vertical-align: top;
+  border-style: double;
+  border-color: orange;
+  padding: 5px;
+}
+section.column-2 {
+  max-width: 47%;
+  min-width: 47%;
+  display: inline-block;
+  vertical-align: top;
+  border-style: double;
+  border-color: orange;
+  padding: 5px;
+  padding-bottom: 25px;
+}
+footer {
+  text-align: center;
+  font-style: italic;
+}
