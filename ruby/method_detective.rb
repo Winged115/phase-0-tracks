@@ -14,16 +14,18 @@
 "enhance".center(16)
 # => "    enhance    "
 
-# "Stop! You’re under arrest!".<???>
+"Stop! You’re under arrest!".upcase
 # => "STOP! YOU’RE UNDER ARREST!"
 
-# "the usual".<???>
+"the usual".replace("the usual suspects")
+"the usual".ljust(18, " suspects")
 #=> "the usual suspects"
 
-# " suspects".<???>
+" suspects".replace("the usual suspects")
+" suspects".rjust(18, "the usual")
 # => "the usual suspects"
 
-# "The case of the disappearing last letter".<???>
+"The case of the disappearing last letter".chop
 # => "The case of the disappearing last lette"
 
 # "The mystery of the missing first letter".<???>
