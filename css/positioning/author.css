@@ -1,0 +1,19 @@
+main.dress_up {
+	position: relative;
+}
+section#octopus {
+	position: absolute;
+	margin-left: 40%;
+	margin-top: 150px;
+	z-index:-1;
+}
+section#hat {
+	position: absolute;
+	margin-left: 38.5%;
+	margin-top: 70px;
+}
+section#glasses {
+	position: absolute;
+	margin-left: 43.25%;
+	margin-top: 248px;
+}
