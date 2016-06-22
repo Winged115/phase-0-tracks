@@ -35,9 +35,12 @@
 "Elementary,    my   dear        Watson!".squeeze(" ")
 # => "Elementary, my dear Watson!"
 
-# "z".<???>
+"z".ord
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
-
-# "How many times does the letter 'a' appear in this string?".<???>
+# The significance is that in the ASCII table has a collating sequence
+# in which lower case z is the 122 character.
+# this allows us to look for predecessors and successors.
+# 122 is z's pascal complier(ordinal position) within the ASCII.
+"How many times does the letter 'a' appear in this string?".count("a")
 # => 4
