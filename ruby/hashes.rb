@@ -27,3 +27,7 @@ puts "Have you used us before?"
 	applicant[:have_you_used_us_before] = gets.chomp
 
 p applicant
+
+applicant.each do |category, input|
+	puts "#{category} : #{input}"
+end
