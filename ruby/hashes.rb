@@ -31,3 +31,9 @@ p applicant
 applicant.each do |category, input|
 	puts "#{category} : #{input}"
 end
+
+# Now I have to ask if there is anything the user
+# would want to change. no need for looping but I have to direct
+# the user back to the category they want to change.
+# If no change is wanted, they type "none", and we continue 
+# on to the rest of the program.
