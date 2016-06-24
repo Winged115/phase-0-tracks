@@ -37,24 +37,31 @@ end
 # the user back to the category they want to change.
 # If no change is wanted, they type "none", and we continue 
 # on to the rest of the program.
-puts "Are there any categories you would like to change?Please enter the category or type 'none'"
-	user_input = gets.chomp
-		if user_input == "name"
-			puts "Name:"
-			applicant[:name] = gets.chomp
-		elsif user_input == "number_of_children"
-			puts "Number of Children:"
-			applicant[:number_of_children] = gets.chomp
-		elsif user_input == "decor_theme"
-			puts "Decor Theme:"
-			applicant[:decor_theme] = gets.chomp
-		elsif user_input == "disabilites"
-			puts "Disabilites:"
-			applicant[:disabilites] = gets.chomp
-		elsif user_input == "salary"
-			puts "Salary:"
-			applicant[:salary] = gets.chomp
-		elsif user_input == "used_us_before"
+puts "Please enter the category you would like to update or type 'none'"
+user_input = gets.chomp
+	if user_input == "name"
+		puts "Name:"
+		applicant[:name] = gets.chomp
+	elsif user_input == "number_of_children"
+		puts "Number of Children:"
+		applicant[:number_of_children] = gets.chomp
+	elsif user_input == "decor_theme"
+		puts "Decor Theme:"
+		applicant[:decor_theme] = gets.chomp
+	elsif user_input == "disabilites"
+		puts "Disabilites:"
+		applicant[:disabilites] = gets.chomp
+	elsif user_input == "salary"
+		puts "Salary:"
+		applicant[:salary] = gets.chomp
+	elsif user_input == "used_us_before"
+		puts "have you used us before:"
+		applicant[:used_us_before] = gets.chomp
+	else user_input == "none"
+		puts "Thank You."
+	end
+
+p applicant
 
 
 
