@@ -11,3 +11,16 @@ def name_swap(str)
 		name_array[0].insert(-1, " ")
 		name_array.join('')
 end
+
+# New method for swapping letters.
+# also trying to create looping alphabet
+# this is so i can change every letter over one.
+
+def alt_swap(str)
+	vowel = "aeiou"
+	consonant = "bcdfghjklmnpqrstvwxyz"
+	n_array = str.split('')
+	n_array.map! { |letter| letter.next }
+	name_string = n_array.join('')
+end	
+p alt_swap(name_swap("Felicia Torres"))
