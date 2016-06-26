@@ -10,7 +10,6 @@ def name_swap(str)
 		name_array.reverse!
 		name_array[0].insert(-1, " ")
 		name_array.join('').downcase!
-
 end
 
 # New method for swapping letters.
@@ -31,3 +30,12 @@ def letter_swap(str)
 	return new_str
 end
 p letter_swap(name_swap("Felicia Torres"))
+
+# I just want a method to get rid of the exclimation point
+def exc_delete(str)
+	str.gsub(/[!]/, "!" => " ")
+end
+p exc_delete(letter_swap(name_swap("Felicia Torres")))
+
+
+
