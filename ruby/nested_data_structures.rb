@@ -56,3 +56,27 @@ michigan = {
 }
 
 p michigan[:metro_detroit][:town]
+
+p michigan[:metro_detroit][:town][5]
+
+p michigan[:upper_peninsula][:ethnicity][:white]
+
+p michigan[:detroit][:district].push("Palmer Park")
+
+p michigan[:detroit][:ethnicity][:arab] = "7%"
+
+p michigan[:detroit][:ethnicity][:arab]
+
+p michigan[:metro_detroit][:town][3].replace "Lathrup Village"
+
+p michigan[:metro_detroit][:town]
+
+p (michigan[:upper_peninsula][:population] * 8).to_f
+
+p michigan[:detroit][:district].delete_at(4)
+
+p michigan[:upper_peninsula][:ethnicity].has_value?(".7%")
+
+p michigan[:metro_detroit][:ethnicity][:black] = "Twenty Three Percent"
+
+p michigan[:metro_detroit][:ethnicity]
