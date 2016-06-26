@@ -7,9 +7,9 @@ michigan = {
 	metro_detroit: {
 		population: "2000000".to_i,
 			ethnicity: {
-				white: "70%"
-				black: "23%"
-				hispanic: "6%"
+				white: "70%",
+				black: "23%",
+				hispanic: "6%",
 				arab: "5%"
 			}
 				towns: [
@@ -22,6 +22,19 @@ michigan = {
 				]
 	}
 	detroit: {
-		population: 
+		population: "720000".to_i,
+			ethnicity: {
+				white: "11%",
+				black: "83%",
+				hispanic: "7%",
+				arab: "5%"
+			}
+				districts: [
+					"Midtown",
+					"Jefferson Corridor",
+					"Corktown",
+					"Riverfront",
+					"Southwest Detroit"
+				]
 	}
 }
