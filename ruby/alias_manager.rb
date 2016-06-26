@@ -16,11 +16,17 @@ end
 # also trying to create looping alphabet
 # this is so i can change every letter over one.
 
-def alt_swap(str)
-	vowel = "aeiou"
-	consonant = "bcdfghjklmnpqrstvwxyz"
-	n_array = str.split('')
-	n_array.map! { |letter| letter.next }
-	name_string = n_array.join('')
-end	
-p alt_swap(name_swap("Felicia Torres"))
+def letter_swap(str)
+	count = 0
+	new_str = ""
+	while count < str.length
+		str_to_int = (str[count].ord + 1)
+		if str_to_int > 122
+			str_to_int = 97
+		end
+		new_str += str_to_int.chr
+		count+=1
+	end
+	return new_str
+end
+p letter_swap(name_swap("Felicia Torres"))
