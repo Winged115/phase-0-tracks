@@ -12,6 +12,15 @@ def name_swap(str)
 		name_array.join('').downcase!
 end
 
+# I need a method for identifying vowels
+# and consonants. This is the hardest part of the release for me.
+# I want to indentify all a,e,i,o,u
+# change them to the next vowel.
+# I want to indentify consonants and have them be the next
+# consonant or jump the vowel.
+
+
+
 # New method for swapping letters.
 # also trying to create looping alphabet
 # this is so i can change every letter over one.
