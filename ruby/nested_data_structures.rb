@@ -4,14 +4,24 @@
 # within our nested data. OK, now think of some data you jackinape!
 
 michigan = {
-	suburban_detroit: {
-		town_names: ["Troy",
-					 "Birmingham",
-					 "Southfield",
-					 "Royal Oak",
-					 "West Bloomfield"
-		],
+	metro_detroit: {
+		population: "2000000".to_i,
+			ethnicity: {
+				white: "70%"
+				black: "23%"
+				hispanic: "6%"
+				arab: "5%"
+			}
+				towns: [
+					"Birmingham",
+					"Troy",
+					"West Bloomfield",
+					"Southfield",
+					"Royal Oak",
+					"Dearborn"
+				]
 	}
-
+	detroit: {
+		population: 
+	}
 }
-p michigan[:suburban_detroit][:town_names]
