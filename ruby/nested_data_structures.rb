@@ -29,12 +29,29 @@ michigan = {
 				hispanic: "7%",
 				arab: "5%"
 			}
-				districts: [
+				district: [
 					"Midtown",
 					"Jefferson Corridor",
 					"Corktown",
 					"Riverfront",
 					"Southwest Detroit"
 				]
+	upper_peninsula: {
+		population: "311000".to_i,
+			ethnicity: {
+				white: "94%",
+				black: "2%",
+				hispanic: ".4%",
+				asian: ".7%"
+
+			}
+				towns: [
+					"Marquette",
+					"Ironwood",
+					"Escanaba",
+					"St. Ignace",
+					"Ishpeming"
+				]
 	}
+}
 }
