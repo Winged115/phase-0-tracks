@@ -9,7 +9,8 @@ def name_swap(str)
 	name_array = str.split(' ')
 		name_array.reverse!
 		name_array[0].insert(-1, " ")
-		name_array.join('')
+		name_array.join('').downcase!
+
 end
 
 # New method for swapping letters.
