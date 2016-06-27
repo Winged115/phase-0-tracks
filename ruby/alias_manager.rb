@@ -18,12 +18,13 @@ end
 # change them to the next vowel.
 # I want to indentify consonants and have them be the next
 # consonant or jump the vowel.
+
 def next_vowel
 	alphabet ="abcdefghijklmnopqrstuvwxyz"
 	all_letters = alphabet.split('')
 	vowels = all_letters.keep_if { |vowel| vowel =~ /[aeiou]/}
 end
- p next_vowel
+
 # New method for swapping letters.
 # also trying to create looping alphabet
 # this is so i can change every letter over one.
@@ -41,13 +42,12 @@ def letter_swap(str)
 	end
 	return new_str
 end
-p letter_swap(name_swap("Felicia Torres"))
 
 # I just want a method to get rid of the exclimation point
+
 def exc_delete(str)
 	str.gsub(/[!]/, "!" => " ")
 end
-p exc_delete(letter_swap(name_swap("Felicia Torres")))
 
 # Now I want to Upcase just the first letters of the new alias
 
@@ -57,8 +57,23 @@ def capitalization(str)
 		capital_array[0].capitalize!
 		capital_array[1].capitalize!
 		capital_array.join('')
-
 end
 
-p capitalization(exc_delete(letter_swap(name_swap("Felicia Torres"))))
+valid_input = false
+
+until valid_input == true
+	puts "For an alias type a name, otherwise type 'quit'."
+
+	user_input = gets.chomp
+
+	if user_input == "quit"
+		puts "Shutting Down."
+		valid_input = true
+	else user_input || "quit"
+		name = user_input
+		puts capitalization(exc_delete(letter_swap(name_swap(name))))
+		secret_identity = capitalization(exc_delete(letter_swap(name_swap(name))))
+	end
+end
+
 
