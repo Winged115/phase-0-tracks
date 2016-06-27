@@ -60,12 +60,11 @@ def capitalization(str)
 end
 
 valid_input = false
-
+classified = {}
 until valid_input == true
 	puts "For an alias type a name, otherwise type 'quit'."
 
 	user_input = gets.chomp
-
 	if user_input == "quit"
 		puts "Shutting Down."
 		valid_input = true
@@ -73,7 +72,10 @@ until valid_input == true
 		name = user_input
 		puts capitalization(exc_delete(letter_swap(name_swap(name))))
 		secret_identity = capitalization(exc_delete(letter_swap(name_swap(name))))
+		classified.store(name, secret_identity)
 	end
 end
+
+p classified.each {|name, secret_identity| puts "#{name} is #{secret_identity}"}
 
 
