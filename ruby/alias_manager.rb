@@ -18,9 +18,12 @@ end
 # change them to the next vowel.
 # I want to indentify consonants and have them be the next
 # consonant or jump the vowel.
-
-
-
+def next_vowel
+	alphabet ="abcdefghijklmnopqrstuvwxyz"
+	all_letters = alphabet.split('')
+	vowels = all_letters.keep_if { |vowel| vowel =~ /[aeiou]/}
+end
+ p next_vowel
 # New method for swapping letters.
 # also trying to create looping alphabet
 # this is so i can change every letter over one.
@@ -46,5 +49,16 @@ def exc_delete(str)
 end
 p exc_delete(letter_swap(name_swap("Felicia Torres")))
 
+# Now I want to Upcase just the first letters of the new alias
 
+def capitalization(str)
+	capital_array = str.split(' ')
+		capital_array[0].insert(-1, " ")
+		capital_array[0].capitalize!
+		capital_array[1].capitalize!
+		capital_array.join('')
+
+end
+
+p capitalization(exc_delete(letter_swap(name_swap("Felicia Torres"))))
 
