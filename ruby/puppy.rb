@@ -42,14 +42,14 @@ fido.instance_of?(Puppy)
 
 str = String.new
 
-str.Length
+str.length
 
 str.empty?
 
 str += "huh."
 
-greeting = Strinig.new("hello")
+greeting = String.new("hello")
 
-greeting.Length
+greeting.length
 
 greeting.upcase
