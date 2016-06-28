@@ -33,3 +33,23 @@ spot = Puppy.new
 spot.class
 
 duchess == fido
+
+fido.instance_of?(Array)
+
+fido.instance_of?(Puppy)
+
+# spot.play_dead returns error, undefined method
+
+str = String.new
+
+str.Length
+
+str.empty?
+
+str += "huh."
+
+greeting = Strinig.new("hello")
+
+greeting.Length
+
+greeting.upcase
