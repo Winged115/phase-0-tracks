@@ -30,25 +30,25 @@ end
 #santa = Santa.new
 #santa.speak
 #santa.eat_milk_and_cookies("Chocolate Chip Cookie")
-santas =[]
- 
-gender =[]
-
-ethnicity = []
-
-while gender.length < 3
-	puts "What is your gender?"
-		gender << gets.chomp
-
-	until ethnicity.length == gender.length
-		puts "what is your ethnicity?"
-			ethnicity << gets.chomp
-	end
-
-end
-
-gender.length.times do |i|
-	santas << Santa.new(gender[i], ethnicity[i])
-end
+#santas =[]
+# 
+#gender =[]
+#
+#ethnicity = []
+#
+#while gender.length < 3
+#	puts "What is your gender?"
+#		gender << gets.chomp
+#
+#	until ethnicity.length == gender.length
+#		puts "what is your ethnicity?"
+#			ethnicity << gets.chomp
+#	end
+#
+#end
+#
+#gender.length.times do |i|
+#	santas << Santa.new(gender[i], ethnicity[i])
+#end
 
 
