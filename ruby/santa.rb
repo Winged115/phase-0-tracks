@@ -46,12 +46,12 @@ end
 #santa = Santa.new
 #santa.speak
 #santa.eat_milk_and_cookies("Chocolate Chip Cookie")
-#santas =[]
-# 
-#gender =[]
-#
-#ethnicity = []
-#
+santas =[]
+ 
+gender =["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+
+ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
 #while gender.length < 3
 #	puts "What is your gender?"
 #		gender << gets.chomp
@@ -63,17 +63,16 @@ end
 #
 #end
 #
-#gender.length.times do |i|
-#	santas << Santa.new(gender[i], ethnicity[i])
-#end
+gender.length.times do |i|
+	santas << Santa.new(gender[i], ethnicity[i])
+end
 
-santa = Santa.new("Male", "White")
-p santa.ethnicity
-p santa.celebrate_birthday
-p santa.celebrate_birthday
-p santa.age
-p santa.get_mad_at("Blitzen")
-santa.gender = "Female"
-puts "#{santa.gender}"
+p santas[1].ethnicity
+p santas[1].celebrate_birthday
+p santas[1].celebrate_birthday
+p santas[1].age
+p santas[1].get_mad_at("Blitzen")
+santas[1].gender = "bigender"
+puts "#{santas[1].gender}"
 
 
