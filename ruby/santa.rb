@@ -1,6 +1,6 @@
 class Santa
 
-	def initialize(name)
+	def initialize
 		puts "Initializing Santa instance..."
 	end
 
@@ -14,6 +14,6 @@ class Santa
 
 end
 
-santa = Santa.new("St. Nick")
+santa = Santa.new
 santa.speak
 santa.eat_milk_and_cookies("Chocolate Chip Cookie")
