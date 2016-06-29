@@ -30,12 +30,16 @@ ethnicity = []
 while gender.length < 3
 	puts "What is your gender?"
 		gender << gets.chomp
+
 	until ethnicity.length == gender.length
 		puts "what is your ethnicity?"
 			ethnicity << gets.chomp
 	end
+	
 end
 
-gender.length
+gender.length.times do |i|
+	santas << Santa.new(gender[i], ethnicity[i])
+end
 
 
