@@ -16,6 +16,15 @@ class Santa
 		puts "That was a good #{cookie}!"
 	end
 
+	def celebrate_birthday
+		@age += 1
+	end
+
+	def get_mad_at(reindeer_name)
+		@reindeer_ranking.delete(reindeer_name)
+		@reindeer_ranking.insert(-1, reindeer_name)
+	end
+
 end
 
 #santa = Santa.new
@@ -35,7 +44,7 @@ while gender.length < 3
 		puts "what is your ethnicity?"
 			ethnicity << gets.chomp
 	end
-	
+
 end
 
 gender.length.times do |i|
