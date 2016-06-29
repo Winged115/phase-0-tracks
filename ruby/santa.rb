@@ -8,7 +8,7 @@ class Santa
 		@gender = gender
 		@ethnicity = ethnicity
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		@age = 0
+		@age = rand(140)
 		puts "Initializing Santa instance..."
 	end
 
@@ -79,8 +79,7 @@ ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say"
 # santas[1].gender = "bigender"
 # puts "#{santas[1].gender}"
 
-100.times do
-	santas << Santa.new(gender.sample, ethnicity.sample)
+ 10.times do
+	p Santa.new(gender.sample, ethnicity.sample)
 end
-
 
