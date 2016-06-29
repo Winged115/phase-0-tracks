@@ -32,6 +32,10 @@ class Santa
 	def ethnicity
 		@ethnicity
 	end
+
+	def gender
+		@gender
+	end
 # Setter method
 	def gender=(new_gender)
 		@gender = new_gender
@@ -62,5 +66,14 @@ end
 #gender.length.times do |i|
 #	santas << Santa.new(gender[i], ethnicity[i])
 #end
+
+santa = Santa.new("Male", "White")
+p santa.ethnicity
+p santa.celebrate_birthday
+p santa.celebrate_birthday
+p santa.age
+p santa.get_mad_at("Blitzen")
+santa.gender = "Female"
+puts "#{santa.gender}"
 
 
