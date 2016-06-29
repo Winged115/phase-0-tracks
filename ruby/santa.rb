@@ -27,8 +27,15 @@ gender =[]
 
 ethnicity = []
 
-while gender.length < 6
+while gender.length < 3
 	puts "What is your gender?"
 		gender << gets.chomp
+	until ethnicity.length == gender.length
+		puts "what is your ethnicity?"
+			ethnicity << gets.chomp
+	end
 end
-p gender
+
+gender.length
+
+
