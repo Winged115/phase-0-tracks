@@ -67,9 +67,9 @@ ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say"
 #
 #end
 #
-gender.length.times do |i|
-	santas << Santa.new(gender[i], ethnicity[i])
-end
+# gender.length.times do |i|
+#	santas << Santa.new(gender[i], ethnicity[i])
+# end
 
 p santas[1].ethnicity
 p santas[1].celebrate_birthday
@@ -78,5 +78,9 @@ p santas[1].age
 p santas[1].get_mad_at("Blitzen")
 santas[1].gender = "bigender"
 puts "#{santas[1].gender}"
+
+100.times do
+	santas << Santa.new(gender, ethnicity)
+end
 
 
