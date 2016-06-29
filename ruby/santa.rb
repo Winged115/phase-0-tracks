@@ -23,7 +23,12 @@ end
 #santa.eat_milk_and_cookies("Chocolate Chip Cookie")
 santas =[]
  
+gender =[]
 
+ethnicity = []
 
-
-
+while gender.length < 6
+	puts "What is your gender?"
+		gender << gets.chomp
+end
+p gender
