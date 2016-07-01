@@ -50,7 +50,7 @@ end
 
 # monster = Sea_Monster.new(name.sample, "The Indian Ocean")
 # p "the #{monster.name} is in #{monster.location}."
-# p monster.destroy("Cruise Ship")
+# p monster.destroy("Cruise Liner")
 # monster.name = "Lohanthony"
 # p "the new name is #{monster.name}."
 # p "The #{monster.name} is #{monster.speed}"
