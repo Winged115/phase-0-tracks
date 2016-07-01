@@ -71,9 +71,21 @@ loop do
 	speed = gets.chomp
 	
 	monsters << Sea_Monster.new(name, location, age, speed)
+	
 	puts "Continue?"
 	break if gets.chomp == "exit"
 end
+
+monsters.each do |monster|
+	p monster.name
+	p monster.location
+	p monster.age
+	p monster.speed
+	puts "----"
+end
+# p monsters[0].roar
+# p monsters[0].destroy("Pirate Ship")
+# p monsters[0].release
 # p monsters[0].name
 # p monsters[0].location
 # p monsters[0].age
