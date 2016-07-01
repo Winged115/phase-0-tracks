@@ -8,6 +8,8 @@
 #
 # Age: 100-5000
 #
+# Speed:
+#
 # Location: 
 #
 #Behaviors-----------------
@@ -19,11 +21,16 @@
 # Roar
 
 class Sea_Monster
+	attr_reader :location, :age, :speed
+	attr_accessor :name
+
 
 	def initialize(name, location)
 		@name = name
 		@location = location
-		@age = rand.(100..5000)
+		@age = rand(100..5000)
+		@speed = "Faster than anything I've ever seen."
+		puts "Initializing new Sea Monster instance..."
 	end
 
 	def roar
@@ -38,3 +45,11 @@ class Sea_Monster
 		puts "Release THE #{@name}!"
 	end
 end
+
+name = ["Kraken", "Cthulu", "Jaws", "Leviathan", "Hydra"]
+
+ monster = Sea_Monster.new(name.sample, "The Indian Ocean")
+p "the #{monster.name} is in #{monster.location}."
+# p monster.destroy("Cruise Ship")
+p monster.name = "Lohanthony"
+p "the new name is #{monster.name}."
