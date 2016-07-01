@@ -4,13 +4,13 @@
 #
 #ATTRIBUTES----------------
 #
-# Name of monster: Kraken, Jaws, Cthulu, Hydra, Leviathan.
+# Name of monster: The Kraken, Jaws, Cthulu, The Hydra, The Leviathan, The Loch Ness Monster.
 #
 # Age: 100-5000
 #
 # Speed:
 #
-# Location: 
+# Location: Any body of water
 #
 #Behaviors-----------------
 #
