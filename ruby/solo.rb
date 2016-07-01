@@ -1,13 +1,22 @@
 # CLASS--------------------
 #
-# Leviathan
+# Sea Monster
 #
 #ATTRIBUTES----------------
 #
-# Type of monster: Kraken, Jaws, Cthulu, Hydra, Leviathan.
+# Name of monster: Kraken, Jaws, Cthulu, Hydra, Leviathan.
 #
 # Age: 100-5000
 # 
 # Speed: 
 #
 # Location: 
+#
+#Behaviors-----------------
+#
+# Destroy ships
+#
+# Swim
+#
+# Roar
+#
