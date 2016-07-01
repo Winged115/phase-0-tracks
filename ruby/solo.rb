@@ -19,4 +19,18 @@
 # Swim
 #
 # Roar
-#
+
+class Sea_Monster
+
+	def roar
+		puts "ROOOOOOAAAAAARRRRRRTTTHHHHHH!"
+	end
+
+	def destroy(ship_type)
+		puts "*The #{@name} rips through the #{ship_type}."
+	end
+
+	def release
+		puts "Release THE #{@name}!"
+	end
+end
