@@ -55,23 +55,25 @@ end
 # p "the new name is #{monster.name}."
 # p "The #{monster.name} is #{monster.speed}"
 monsters = []
+
 puts "We would like information on Sea Monsters, when asked to continue type 'exit' if finished."
+
 puts "--------"
 loop do
 	puts "What is the creature's name?"
-	name = gets.chomp
+		name = gets.chomp
 	
 	puts "Where is the beast located?"
-	location = gets.chomp
+		location = gets.chomp
 	
 	puts "How old is this primeordial being in years?"
-	age = gets.chomp.to_i
+		age = gets.chomp.to_i
 	
 	puts "How fast was the fiend?"
-	speed = gets.chomp
+		speed = gets.chomp
 	
 	monsters << Sea_Monster.new(name, location, age, speed)
-	
+
 	puts "Continue?"
 	break if gets.chomp == "exit"
 end
