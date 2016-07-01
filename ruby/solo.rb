@@ -56,7 +56,7 @@ end
 # p "The #{monster.name} is #{monster.speed}"
 monsters = []
 
-puts "We would like information on Sea Monsters, when asked to continue type 'exit' if finished."
+puts "We would like information on Sea Monsters, when asked to continue, type 'exit' if finished."
 
 puts "--------"
 loop do
