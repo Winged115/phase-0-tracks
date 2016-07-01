@@ -25,7 +25,7 @@ class Sea_Monster
 	attr_accessor :name
 
 
-	def initialize(name, location, age, speed)
+	def initialize(name, location)
 		@name = name
 		@location = location
 		@age = age
@@ -55,41 +55,15 @@ end
 # p "the new name is #{monster.name}."
 # p "The #{monster.name} is #{monster.speed}"
 monsters = []
+puts "Name?"
+name = gets.chomp
+puts "Location?"
+location = gets.chomp
+puts "Age?"
+age = gets.chomp.to_i
+puts "Speed?"
+speed = gets.chomp
 
-name = []
 
-location = []
-
-age = []
-
-speed = []
-valid_input = false
-puts "We need information on Sea Monsters, when you are done type 'exit'"
-puts "------"
-until valid_input
-	puts "What is the creature's name?"
-	name << gets.chomp
-	
-	puts "Where is the beast located?"
-	location << gets.chomp
-	
-	puts "How old is this primordial beast?"
-	age << gets.chomp.to_i
-	
-	puts "How fast is the monster?"
-	speed << gets.chomp
-	
-	monsters <<Sea_Monster.new(name,location, age, speed)
-
-	puts "If finished type 'exit', otherwise type 'new monster'."
-		user_input = gets.chomp
-			if user_input == "exit"
-				valid_input = true
-			else user_input != "exit"
-			end
-end
-
-p monsters.name
-p monsters.location
-p monsters.age
-p monsters.speed
+monsters << Sea_Monster.new(name, location)
+p monsters
