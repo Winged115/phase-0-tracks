@@ -54,3 +54,4 @@ end
 # monster.name = "Lohanthony"
 # p "the new name is #{monster.name}."
 # p "The #{monster.name} is #{monster.speed}"
+monsters = []
