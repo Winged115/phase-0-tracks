@@ -46,10 +46,11 @@ class Sea_Monster
 	end
 end
 
-name = ["Kraken", "Cthulu", "Jaws", "Leviathan", "Hydra"]
+# name = ["Kraken", "Cthulu", "Jaws", "Leviathan", "Hydra"]
 
- monster = Sea_Monster.new(name.sample, "The Indian Ocean")
-p "the #{monster.name} is in #{monster.location}."
+# monster = Sea_Monster.new(name.sample, "The Indian Ocean")
+# p "the #{monster.name} is in #{monster.location}."
 # p monster.destroy("Cruise Ship")
-p monster.name = "Lohanthony"
-p "the new name is #{monster.name}."
+# monster.name = "Lohanthony"
+# p "the new name is #{monster.name}."
+# p "The #{monster.name} is #{monster.speed}"
