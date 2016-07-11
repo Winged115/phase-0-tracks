@@ -1,4 +1,12 @@
+module Shout
+	def scream
+		puts "AHHHHHHHH"
+	end
 
+	def whisper(words)
+		words + "shhhhhh."
+	end
+end
 
 
 
