@@ -17,18 +17,16 @@ class Banshee
 end
 
 jack = Human.new
+
 jack.scream
+
+jack.wail('i love coding, even though i get frustrated')
 
 diane = Banshee.new
 
 diane.wail('leave me alone')
 
-
-
-
-
-
-
+diane.scream
 
 
 # module Shout
