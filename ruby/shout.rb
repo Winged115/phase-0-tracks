@@ -3,16 +3,25 @@ module Shout
 		puts "AHHHHHHHH"
 	end
 
-	def whisper(words)
-		words + "shhhhhh."
+	def wail(words)
+		puts words.upcase
 	end
 end
 
+class Human
+	include Shout
+end
 
+class Banshee
+	include Shout
+end
 
+jack = Human.new
+jack.scream
 
+diane = Banshee.new
 
-
+diane.wail('leave me alone')
 
 
 
