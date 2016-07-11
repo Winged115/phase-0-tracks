@@ -86,7 +86,7 @@ monsters.each do |monster|
 	puts "----"
 end
 # p monsters[0].roar
-# p monsters[0].destroy("Pirate Ship")
+ p monsters[0].destroy("Pirate Ship")
 # p monsters[0].release
 # p monsters[0].name
 # p monsters[0].location
