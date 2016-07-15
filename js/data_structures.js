@@ -6,6 +6,12 @@ colors.push('orange');
 
 names.push('Atreyu');
 
-console.log(colors)
+var horse = {};
 
-console.log(names)
+
+for (var i = 0; i < colors.length; i++) {
+    horse[names[i]] = colors[i]
+};
+
+
+console.log(horse);
