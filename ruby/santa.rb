@@ -47,7 +47,7 @@ class Santa
 
 end
 
-# santa = Santa.new
+santas = Santa.new('male','black')
 # santa.speak
 # santa.eat_milk_and_cookies("Chocolate Chip Cookie")
 # santas =[]
@@ -75,16 +75,16 @@ ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say"
 # p santas[1].celebrate_birthday
 # p santas[1].celebrate_birthday
 # p santas[1].age
-# p santas[1].get_mad_at("Blitzen")
+p santas.get_mad_at("Dancer")
 # santas[1].gender = "bigender"
 # puts "#{santas[1].gender}"
 
- 100.times do
-	all_santas = Santa.new(gender.sample, ethnicity.sample)
-		p all_santas.gender
-		p all_santas.ethnicity
-		p all_santas.age
-end
+#  100.times do
+# 	all_santas = Santa.new(gender.sample, ethnicity.sample)
+# 		p all_santas.gender
+# 		p all_santas.ethnicity
+# 		p all_santas.age
+# end
 
 
 
