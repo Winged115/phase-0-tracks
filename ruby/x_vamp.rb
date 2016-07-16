@@ -31,15 +31,16 @@ detect = 'Results inconclusive.'
 		detect = 'Probably not a vampire.'
 	end
 
-	if !correct_age && !(likes_gar || will_insure)
+	if !correct_age && (likes_gar || will_insure)
 		detect = 'Probably a vampire.'
 	end
 
 	if !correct_age && !likes_gar && !will_insure
 		detect = 'Almost certainly a vampire.'
 	end
-	
-	if name == ('Drake Cula' || 'Tu Fang')
+
+	vampire_names = ['Drake Cula', 'Tu Fang']
+	if vampire_names.include?(name)
 		detect = 'Definitely a vampire.'
 	end
 p detect
