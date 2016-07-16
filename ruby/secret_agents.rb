@@ -25,9 +25,17 @@ def decrypt(chars)
 
     index = 0
     while index < chars.length
-        if chars[index] == 'a'
-            new_str += 'z'
-        elsif chars[index] == ' '
+        if chars[index] == ' '
             new_str += ' '
         else
-            new_str += alpha.index
+            new_str += alpha[alpha.index(chars[index]) - 1]
+        end
+        index += 1
+    end
+    p new_str
+end
+
+
+decrypt('a b c')
+
+decrypt(encrypt('swordfish'))
