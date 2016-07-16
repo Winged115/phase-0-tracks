@@ -52,9 +52,23 @@ detect = 'Results inconclusive.'
 	if vampire_names.include?(name)
 		detect = 'Definitely a vampire.'
 	end
+
+	loop do
+		puts 'Name your allergies one by one. enter "done" when finished'
+		allergy = gets.chomp.downcase
+		if allergy == 'done'
+			break
+		elsif allergy == 'sunshine'
+			detect = 'Probably a vampire.'
+			break
+		end
+	end
+
 processed += 1
 p detect
 end
+
+puts 'Actually, never mind! What do these questions have to do with anything? Let\'s all be friends.'
 
 
 
