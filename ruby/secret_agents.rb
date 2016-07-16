@@ -1,15 +1,15 @@
 
-def encrypt(str)
+def encrypt(chars)
     new_str = ''
 
     index = 0
-    while index < str.length
-        if str[index] == 'z'
+    while index < chars.length
+        if chars[index] == 'z'
             new_str += 'a'
-        elsif str[index] == ' '
+        elsif chars[index] == ' '
             new_str += ' '
         else
-            new_str += str[index].next
+            new_str += chars[index].next
         end 
     index += 1
     end
@@ -17,3 +17,17 @@ def encrypt(str)
 end
 
 encrypt('x y z')
+
+def decrypt(chars)
+    new_str = ''
+
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+
+    index = 0
+    while index < chars.length
+        if chars[index] == 'a'
+            new_str += 'z'
+        elsif chars[index] == ' '
+            new_str += ' '
+        else
+            new_str += alpha.index
