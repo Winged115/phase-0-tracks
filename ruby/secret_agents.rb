@@ -44,7 +44,7 @@ end
 
 puts 'Would you like to "encrypt" or "decrypt" a password?'
 
-answer = gets.chomp
+answer = gets.chomp.downcase
 
 puts 'What is your password?'
 
