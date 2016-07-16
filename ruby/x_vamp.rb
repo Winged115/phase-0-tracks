@@ -1,3 +1,12 @@
+
+puts 'How many employees will you process today?'
+
+num_of_employees = gets.chomp.to_i
+
+processed = 0
+
+while processed < num_of_employees
+
 puts 'What is your name?'
 
 name = gets.chomp
@@ -43,6 +52,9 @@ detect = 'Results inconclusive.'
 	if vampire_names.include?(name)
 		detect = 'Definitely a vampire.'
 	end
+processed += 1
 p detect
+end
+
 
 
