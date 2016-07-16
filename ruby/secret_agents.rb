@@ -13,7 +13,8 @@ def encrypt(chars)
         end 
     index += 1
     end
-    p new_str
+   # p new_str
+   new_str
 end
 
 encrypt('x y z')
@@ -32,10 +33,30 @@ def decrypt(chars)
         end
         index += 1
     end
-    p new_str
+   # p new_str
+   new_str
 end
 
 
-decrypt('a b c')
+# decrypt('a b c')
 
-decrypt(encrypt('swordfish'))
+# decrypt(encrypt('swordfish'))
+
+puts 'Would you like to "encrypt" or "decrypt" a password?'
+
+answer = gets.chomp
+
+puts 'What is your password?'
+
+password = gets.chomp.downcase
+
+if answer == 'encrypt'
+  encrypt_pass = encrypt(password)
+  p encrypt_pass.capitalize
+elsif answer == 'decrypt'
+  decrypt_pass = decrypt(password)
+  p decrypt_pass.capitalize
+else
+  puts 'Invalid input.'
+end
+
