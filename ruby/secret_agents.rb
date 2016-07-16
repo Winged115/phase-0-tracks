@@ -1,50 +1,62 @@
-	def encrypt (msg)
-    	count = 0
-    	newMsg = ""
-    	while count < msg.length
-    	 msg_to_int = (msg[count].ord + 1)
-    	 if msg_to_int > 122
-            msg_to_int = 97
-        end
-        newMsg += msg_to_int.chr
-        count+=1
+
+def encrypt(chars)
+    new_str = ''
+
+    index = 0
+    while index < chars.length
+        if chars[index] == 'z'
+            new_str += 'a'
+        elsif chars[index] == ' '
+            new_str += ' '
+        else
+            new_str += chars[index].next
+        end 
+    index += 1
     end
-    return newMsg
-	end
-
-	def decrypt (msg)
-    	count = 0
-    	newMsg = ""
-    	while count < msg.length
-        	msg_to_int = (msg[count].ord - 1)
-        	if     msg_to_int < 97
-            msg_to_int = 122
-        end
-        newMsg += msg_to_int.chr
-        count+=1
-        end
-    return newMsg
-	end
-
-
-#Driver code
-valid_input = false
-until valid_input
-	puts "Hello agent, would you like to encrypt or decrypt?"
-	preference = gets.chomp
-	if preference == "encrypt"
-		puts "What is your password for encryption?"
-		msg = gets.chomp
-		valid_input = true
-		result = encrypt(msg)
-		puts encrypt(msg)
-	elsif preference == "decrypt"
-		puts "what is your password for decryption?"
-		msg = gets.chomp
-		valid_input = true
-		result = decrypt(msg)
-		puts decrypt(msg)
-	else puts "I'm sorry That did not compute."
+   # p new_str
+   new_str
 end
+
+encrypt('x y z')
+
+def decrypt(chars)
+    new_str = ''
+
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+
+    index = 0
+    while index < chars.length
+        if chars[index] == ' '
+            new_str += ' '
+        else
+            new_str += alpha[alpha.index(chars[index]) - 1]
+        end
+        index += 1
+    end
+   # p new_str
+   new_str
 end
-p result
+
+
+# decrypt('a b c')
+
+# decrypt(encrypt('swordfish'))
+
+puts 'Would you like to "encrypt" or "decrypt" a password?'
+
+answer = gets.chomp.downcase
+
+puts 'What is your password?'
+
+password = gets.chomp.downcase
+
+if answer == 'encrypt'
+  encrypt_pass = encrypt(password)
+  p encrypt_pass.capitalize
+elsif answer == 'decrypt'
+  decrypt_pass = decrypt(password)
+  p decrypt_pass.capitalize
+else
+  puts 'Invalid input.'
+end
+
