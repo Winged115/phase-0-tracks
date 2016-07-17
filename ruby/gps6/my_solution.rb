@@ -13,13 +13,17 @@
 require_relative 'state_data'
 
 class VirusPredictor
-
+# INPUT: String-Float-Integer
+# OUTPUT: nothing
+# WHAT-IT-DOES: Set attributes upon initialzation
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
-
+# INPUT: No input
+# OUTPUT: Print the the console (2 prints)
+# WHAT-IT-DOES: Calls two methods within it.
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
