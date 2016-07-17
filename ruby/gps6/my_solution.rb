@@ -30,7 +30,9 @@ class VirusPredictor
   end
 
   private
-
+# INPUT: Float-Integer-String
+# Output: print to the console
+# What-It-Does: calculates number of deaths based off of population density and population.
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -48,6 +50,9 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
+# INPUT: Float-String
+# OUTPUT: Print the the console
+# What-It-Does: calculates speed of spread based off of population density for given state.
 
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
