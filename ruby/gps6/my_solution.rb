@@ -4,7 +4,11 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
+# require_relative is calling upon the other .rb file within 
+# the same directory. what it is 'doing' is allowing this
+# .rb file to use the data within it. It differs from 'require'
+# by being a pathway to a file within the same directory, while
+# 'require' would need the direct pathway to a file to function.
 #
 require_relative 'state_data'
 
