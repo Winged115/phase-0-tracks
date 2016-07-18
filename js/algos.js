@@ -31,7 +31,7 @@ function sortByLength(array) {
 //how it works: call the function with a key and value, have these stored within
 //the js equivilant of a hash. if two values within the hash match
 //return boolean true, otherwise return boolean false.
-//Thinking Smaller Steps: -within function create an empty hash.
+//Thinking Smaller Steps: this was a misstep, needed to create hash outside function------>-within function create an empty hash.
 // -have arguements that are passed into function stored within hash
 // -create IF statement to compare values within the hash
 // -return true if match
