@@ -4,3 +4,6 @@
 //
 //use js languague to sort strings within an array
 
+function sortByLength(array) {
+	
+}
