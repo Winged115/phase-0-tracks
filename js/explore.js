@@ -13,9 +13,13 @@ function reverseString(str) {
 	var reverseArray = strArray.reverse();
 	var newStr = reverseArray.join('');
 	console.log(newStr);
+	return newStr;
 }
 
 reverseString("supercalifragilistic");
 reverseString("hello world");
 reverseString("i'm still thinking in ruby sometimes");
 
+reversed = reverseString("Wahoo");
+
+console.log(reversed);
