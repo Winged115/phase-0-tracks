@@ -26,6 +26,57 @@ function sortByLength(array) {
 	console.log(longestPhrase);
 	}
 }
+//Input: key value pair
+//Output:boolean either true or false
+//how it works: call the function with a key and value, have these stored within
+//the js equivilant of a hash. if two values within the hash match
+//return boolean true, otherwise return boolean false.
+//Thinking Smaller Steps: -within function create an empty hash.
+// -have arguements that are passed into function stored within hash
+// -create IF statement to compare values within the hash
+// -return true if match
+// -else return false with no matches.
+
+function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 sortByLength(["hi", "hello", "hello there"]);
