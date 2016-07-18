@@ -9,5 +9,10 @@
 
 
 function reverseString(str) {
-
+	var str_array = str.split('')
+	var reverse_array = str_array.reverse()
+	var new_str = reverse_array.join('')
+	console.log(new_str)
 }
+
+reverseString("supercalifragilistic")
