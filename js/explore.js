@@ -9,14 +9,14 @@
 
 
 function reverseString(str) {
-	var strArray = str.split('')
-	var reverseArray = strArray.reverse()
-	var newStr = reverseArray.join('')
-	console.log(newStr)
+	var strArray = str.split('');
+	var reverseArray = strArray.reverse();
+	var newStr = reverseArray.join('');
+	console.log(newStr);
 }
 
-reverseString("supercalifragilistic")
-reverseString("hello world")
-reverseString("i'm still thinking in ruby sometimes")
+reverseString("supercalifragilistic");
+reverseString("hello world");
+reverseString("i'm still thinking in ruby sometimes");
 
 the
