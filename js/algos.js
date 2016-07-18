@@ -15,8 +15,8 @@
 //var longestPhrase = ''
 function sortByLength(array) {
 	var longestLength = 0;
-	var longestPhrase = ''
-{
+	var longestPhrase = ''; 
+	{
 	for (var i = 0; i < array.length; i++) {
 		if (array[i].length > longestLength) {
 			longestLength = array[i].length;
@@ -24,7 +24,7 @@ function sortByLength(array) {
 		}
 	}
 	console.log(longestPhrase);
-}
+	}
 }
 
 
