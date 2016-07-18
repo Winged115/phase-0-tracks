@@ -23,3 +23,9 @@ reverseString("i'm still thinking in ruby sometimes");
 reversed = reverseString("Wahoo");
 
 console.log(reversed);
+
+if (1 == 1) {
+	console.log(reversed);
+} else {
+	console.log("can it not be true?");
+}
