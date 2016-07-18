@@ -2,3 +2,12 @@
 // become the first object in the string, and so on and so forth.
 // there is no reverse method, so we want to build a function that
 // can deconstruct our string then reassemble it from the back to front.
+// for each letter typed we want to index it
+// then give it its opposing index
+// so index zero becomes index -1, and we build from there.
+
+
+
+function reverseString(str) {
+
+}
