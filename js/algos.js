@@ -37,23 +37,11 @@ function sortByLength(array) {
 // -return true if match
 // -else return false with no matches.
 
-function 
+function compareValue(name, age) {
+	var dataHash = {};
+	dataHash[name] = age;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -82,3 +70,13 @@ function
 sortByLength(["hi", "hello", "hello there"]);
 sortByLength(["See No Evil", "Hear No Evil", "I Say I Say Do No Evil"]);
 sortByLength(["And", "it", "was", "all", "yellow"]);
+
+
+
+
+
+
+compareValue("ted", 60);
+compareValue("red", 50);
+compareValue("lena", 44);
+compareValue("Oscar", 44);
