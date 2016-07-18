@@ -5,8 +5,8 @@
 //use js languague to sort strings within an array
 
 function sortByLength(array) {
-	array[i].length;
-	console.log(array)
+	var test = array.forEach.length;
+	console.log(test);
 }
 
 
