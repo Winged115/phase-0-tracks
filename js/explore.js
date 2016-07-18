@@ -19,4 +19,3 @@ reverseString("supercalifragilistic");
 reverseString("hello world");
 reverseString("i'm still thinking in ruby sometimes");
 
-the
