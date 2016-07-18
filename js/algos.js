@@ -3,10 +3,16 @@
 //what it does: sorts array of strings from longest to shortest
 // outputs the longest one.
 //use js languague to sort strings within an array
-
+var longestLength = 0
+var longestPhrase = ''
 function sortByLength(array) {
-	for (var i = 0; i < array.length; i++) 
-		array[i].length;
+	for (var i = 0; i < array.length; i++) {
+		if (array[i].length > longestLength) {
+			longestLength = array[i].length;
+			longestPhrase = array[i];
+		}
+	}
+	console.log(longestPhrase);
 }
 
 
