@@ -39,10 +39,25 @@ function sortByLength(array) {
 var dataArray = [];
 function compareValue(name, age) {
 	dataArray[name] = age;
-	console.log(dataArray);
-//from this point I need the hash to compare
+		console.log(dataArray);
+	}
+//from this point I need the array to compare
 //its values.
-}
+
+//NOTE: I've now worked on this challenge for 6 hours straight,
+// I honestly am just stuck here, and being a solo challenge 
+// I can't ask for help or whatnot. I'm not sure if its the language
+// or my problem solving skills, probably a bit of both,
+// But I'd really like some notes, and direction on where to take this
+// and what I'm exactly looking to do, because my logic in my psuedocode could
+// also be wrong. I'm just not sure which way to take this.
+// I know the challenge is incomplete as of now, but I will
+// finish it.
+
+//Input:integer
+//output:array
+//how it works: takes the given integer and converts in into
+// an array with that many objects within the array
 
 
 
