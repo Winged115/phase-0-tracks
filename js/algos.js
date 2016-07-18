@@ -39,7 +39,9 @@ function sortByLength(array) {
 var dataHash = {};
 function compareValue(name, age) {
 	dataHash[name] = age;
-	console.log(dataHash)
+	console.log(dataHash);
+//from this point I need the hash to compare
+//its values.
 }
 
 
