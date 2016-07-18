@@ -10,10 +10,13 @@
 // the second page I clicked on gave me the correct code.
 // It would've taken me a while to think of an if statement
 // like the one below, and I'm reading through the explination of it.
-// I just feel like it may have gone against the release somehow.
-var longestLength = 0
-var longestPhrase = ''
+// I just feel like it may have gone against the release somehow.*NOTE
+//var longestLength = 0
+//var longestPhrase = ''
 function sortByLength(array) {
+	var longestLength = 0;
+	var longestPhrase = ''
+{
 	for (var i = 0; i < array.length; i++) {
 		if (array[i].length > longestLength) {
 			longestLength = array[i].length;
@@ -22,6 +25,9 @@ function sortByLength(array) {
 	}
 	console.log(longestPhrase);
 }
+}
 
 
-sortByLength(["hi", "hello", "hello there"])
+sortByLength(["hi", "hello", "hello there"]);
+sortByLength(["See No Evil", "Hear No Evil", "I Say I Say Do No Evil"]);
+sortByLength(["And", "it", "was", "all", "yellow"]);
