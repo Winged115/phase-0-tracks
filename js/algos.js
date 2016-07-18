@@ -36,11 +36,10 @@ function sortByLength(array) {
 // -create IF statement to compare values within the hash
 // -return true if match
 // -else return false with no matches.
-var dataHash = {};
+var dataArray = [];
 function compareValue(name, age) {
-	dataHash[name] = age;
-		if ()
-	console.log(dataHash);
+	dataArray[name] = age;
+	console.log(dataArray);
 //from this point I need the hash to compare
 //its values.
 }
