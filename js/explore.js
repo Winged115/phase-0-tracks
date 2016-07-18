@@ -9,12 +9,14 @@
 
 
 function reverseString(str) {
-	var str_array = str.split('')
-	var reverse_array = str_array.reverse()
-	var new_str = reverse_array.join('')
-	console.log(new_str)
+	var strArray = str.split('')
+	var reverseArray = strArray.reverse()
+	var newStr = reverseArray.join('')
+	console.log(newStr)
 }
 
 reverseString("supercalifragilistic")
 reverseString("hello world")
 reverseString("i'm still thinking in ruby sometimes")
+
+the
