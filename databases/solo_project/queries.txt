@@ -1,0 +1,77 @@
+sqlite> SELECT * FROM dinosaurs;
+|Tyrannosaurus Rex|Sue|15|true|2
+|Triceratops|Sera|12|false|2
+|Velociraptor|Vicki|5|true|2
+|Velociraptor|Blue|7|true|2
+|Velociraptor|She-rah|8|true|2
+|Stegosaurus|Tree-mom|13|false|2
+|Brachiosaurus|Little Foot|20|false|2
+
+
+ UPDATE dinosaurs SET gender_id=1 WHERE carnivorous="true";
+
+
+SELECT * FROM dinosaurs, gender_counts WHERE dinosaurs.gender_id = gender_counts.id;
+|Tyrannosaurus Rex|Sue|15|true|1|1|Male|4
+|Triceratops|Sera|12|false|2|2|Female|3
+|Velociraptor|Vicki|5|true|1|1|Male|4
+|Velociraptor|Blue|7|true|1|1|Male|4
+|Velociraptor|She-rah|8|true|1|1|Male|4
+|Stegosaurus|Tree-mom|13|false|2|2|Female|3
+|Brachiosaurus|Little Foot|20|false|2|2|Female|3
+
+
+SELECT dinosaurs.species, gender_counts.gender FROM dinosaurs JOIN gender_counts ON dinosaurs.gender_id = gender_counts.id;
+Tyrannosaurus Rex|Male
+Triceratops|Female
+Velociraptor|Male
+Velociraptor|Male
+Velociraptor|Male
+Stegosaurus|Female
+Brachiosaurus|Female
+——>*just tried an alternate way*<——
+ SELECT dinosaurs.species, dinosaurs.name, gender_counts.gender FROM dinosaurs JOIN gender_counts ON dinosaurs.gender_id = gender_counts.id;
+Tyrannosaurus Rex|Sue|Male
+Triceratops|Sera|Female
+Velociraptor|Vicki|Male
+Velociraptor|Blue|Male
+Velociraptor|She-rah|Male
+Stegosaurus|Tree-mom|Female
+Brachiosaurus|Little Foot|Female
+
+DELETE FROM dinosaurs WHERE name="She-rah";
+
+—>*example of INNER JOIN*<—
+<sqlite> SELECT species
+   ...> FROM dinosaurs
+   ...> INNER JOIN gender_counts
+   ...> ON dinosaurs.gender_id = gender_counts.id;
+Tyrannosaurus Rex
+Triceratops
+Velociraptor
+Velociraptor
+Stegosaurus
+Brachiosaurus
+
+—>*LEFT [OUTER] JOIN*<—
+SELECT name FROM dinosaurs
+   ...> LEFT [OUTER] JOIN gender_counts ON dinosaurs.gender_id = gender_counts.id;
+Error: unknown or unsupported join type: LEFT [OUTER]
+
+—> JOINS is used to combine records from multiple tables within the given database.
+JOINS uses values common to each table to combine fields.
+
+—>*CROSS JOIN*<—
+SELECT name, gender, count FROM dinosaurs CROSS JOIN gender_counts;
+Sue|Male|3
+Sue|Female|3
+Sera|Male|3
+Sera|Female|3
+Vicki|Male|3
+Vicki|Female|3
+Blue|Male|3
+Blue|Female|3
+Tree-mom|Male|3
+Tree-mom|Female|3
+Little Foot|Male|3
+Little Foot|Female|3
