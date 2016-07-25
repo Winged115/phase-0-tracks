@@ -24,4 +24,14 @@ db.execute(create_table2_cmd)
 
 # Testing my tables
 # db.execute("INSERT INTO procrastination (issue, rating) VALUES ('Going out with friends', 1)")
+puts "What is something you do to procrastinate?"
+loop do
+	issue = gets.chomp
+	puts "On a 1-5 rating how invasive is this behavior to you(1 being least, 5 being most)?"
+	puts"--------------"
+	rating = gets.chomp.to_i
+	db.execute("INSERT INTO procrastination (issue, rating) VALUES (?, ?)", [issue, rating])
+	puts "If done type 'done'."
+	break if gets.chomp == "done"
+end
 
