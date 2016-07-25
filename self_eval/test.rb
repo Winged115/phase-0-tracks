@@ -91,6 +91,23 @@ puts "If done type 'done'."
 	end
 end
 
+puts "Now that you've seen your data"
+puts "would you like to delete any issues you've dealt with?(y/n)."
+
+	confirm = gets.chomp
+
+	if confirm == "y"
+		puts "which id numbered row would you like to delete?"
+
+		id = gets.chomp
+
+		db.execute("DELETE FROM procrastination WHERE id=(?)",[id])
+
+	else puts "Now you have all this information on yourself!"
+		
+	end
+
+puts "Thank your for evaluating yourself."
 
 
 
