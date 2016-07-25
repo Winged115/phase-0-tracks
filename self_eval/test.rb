@@ -21,6 +21,14 @@ SQL
 db.execute(create_table1_cmd)
 db.execute(create_table2_cmd)
 
+#def print_procrastinate(db)
+#	db.execute("SELECT * FROM procrastination")
+#end
+#
+#def print_solution(db)
+#	db.execute("SELECT * FROM solution")
+#end
+
 
 # Testing my tables
 # db.execute("INSERT INTO procrastination (issue, rating) VALUES ('Going out with friends', 1)")
@@ -52,5 +60,40 @@ loop do
 
 	break if gets.chomp == "done"
 end
+
+
+#print_procrastinate
+#print_solution
+valid_input = false
+
+until valid_input
+
+puts "To see how you procrastinate type 'issues'."
+puts "-----------"
+puts "To see your solutions type 'solutions'."
+puts "If done type 'done'."
+
+	answer = gets.chomp
+
+	if answer == "issues"
+		p db.execute("SELECT * FROM procrastination")
+		valid_input == true
+
+	elsif answer == "solutions"
+		p db.execute("SELECT * FROM solution")
+		valid_input == true
+
+	elsif answer == "done"
+		break
+
+	else puts "I did not understand"
+
+	end
+end
+
+
+
+
+
 
 
