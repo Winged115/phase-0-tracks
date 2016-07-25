@@ -38,5 +38,19 @@ loop do
 	
 	puts "If done type 'done' otherwise type 'cont'."
 
-	break if gets.chomp = "done"
+	break if gets.chomp == "done"
 end
+
+loop do
+	puts "What is a solution for breaking your habit?"
+	
+	solution = gets.chomp
+
+	db.execute("INSERT INTO solution (solution) VALUES (?)", [solution])
+
+	puts "If no more solutions type 'done' otherwise type 'cont'."
+
+	break if gets.chomp == "done"
+end
+
+
