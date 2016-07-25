@@ -36,7 +36,7 @@ loop do
 
 	db.execute("INSERT INTO procrastination (issue, rating) VALUES (?, ?)", [issue, rating])
 	
-	puts "If done type 'done'."
+	puts "If done type 'done' otherwise type 'cont'."
 
 	break if gets.chomp = "done"
 end
