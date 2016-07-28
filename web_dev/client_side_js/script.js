@@ -1,6 +1,7 @@
 console.log("Hello World");
 
-
+var title = document.getElementsByTagName('h1');
+title[0].style.border = '3px solid red';
 
 
 
