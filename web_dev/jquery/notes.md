@@ -14,3 +14,4 @@
 > Breaks are important for me, otherwise my mind starts to get on a low frequency for learning.
 
 > I plan to approach this topic with an open mind, and I also just want to try and grow in my ability to research, whether it be through Google, or some other means. I'll probably also try using the Jquery and their functions as I research.
+
