@@ -5,6 +5,35 @@ require 'sqlite3'
 db = SQLite3::Database.new("students.db")
 db.results_as_hash = true
 
+
+
+get '/contact' do
+  "123 Woodward Ave."
+  "Birmingham, MI 48009"
+end
+
+get '/good_job/' do
+  name = params[:name]
+  if name
+    "Good Job #{name}!"
+  else
+    "Good Job!"
+  end
+end
+
+get '/adder/:first/plus/:second' do
+  first = params[:first]
+  second = params[:second]
+  sum = first.to_i + second.to_i
+  "#{sum}"
+  #sum = params[:first] + params[:second]
+  #p sum
+  #sum = params[:no_1] + params[:no_2]
+  #answer = sum.to_s
+  #{}"The total of #{params[:no_1]} plus #{params[:no_2]} is #{answer}."
+end
+
+
 # write a basic GET route
 # add a query parameter
 # GET /
@@ -44,3 +73,13 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+get '/student/:campus' do
+  students = db.execute("SELECT * FROM students WHERE campus=?", [params[:campus]])
+  response = ""
+  students.each do |student|
+    response << "Name: #{student['name']}<br>"
+    response << "Age: #{student['age']}<br><br>"
+  end
+  response
+  end
