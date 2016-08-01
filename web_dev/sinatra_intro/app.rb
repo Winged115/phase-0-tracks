@@ -11,6 +11,19 @@ get '/contact' do
   "123 Woodward Ave."
   "Birmingham, MI 48009"
 end
+
+get '/good_job/' do
+  name = params[:name]
+  if name
+    "Good Job #{name}!"
+  else
+    "Good Job!"
+  end
+end
+
+
+
+
 # write a basic GET route
 # add a query parameter
 # GET /
