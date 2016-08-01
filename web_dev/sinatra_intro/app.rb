@@ -73,3 +73,13 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+get '/student/:campus' do
+  students = db.execute("SELECT * FROM students WHERE campus=?", [params[:campus]])
+  response = ""
+  students.each do |student|
+    response << "Name: #{student['name']}<br>"
+    response << "Age: #{student['age']}<br><br>"
+  end
+  response
+  end
