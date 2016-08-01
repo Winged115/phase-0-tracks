@@ -5,6 +5,12 @@ require 'sqlite3'
 db = SQLite3::Database.new("students.db")
 db.results_as_hash = true
 
+
+
+get '/contact' do
+  "123 Woodward Ave."
+  "Birmingham, MI 48009"
+end
 # write a basic GET route
 # add a query parameter
 # GET /
