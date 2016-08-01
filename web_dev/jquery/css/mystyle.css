@@ -1,8 +1,12 @@
 body {
+	font-family: Impact;
     background-color: lightblue;
 }
 
 .header {
+	border-style: dotted;
+	border-width: 3px;
+	border-color: red;
     color: navy;
     margin-left: 20px;
 }
@@ -13,4 +17,33 @@ ul {
 
 .un:before {
 	content:"\2605";
+}
+
+strong {
+	font-size: 50px; 
+}
+
+button {
+	background-color: green;
+	color: navy;
+	padding: 15px 30px;
+	font-size: 20px;
+	border: none;
+	font-family: Veranda;
+}
+
+#one {
+	font-family: Arial;
+	position: relative;
+
+}
+
+#two {
+	font-family: Comic;
+	position: relative;
+}
+
+#three {
+	font-family: Times;
+	position: relative;
 }
