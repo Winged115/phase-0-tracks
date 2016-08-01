@@ -21,7 +21,17 @@ get '/good_job/' do
   end
 end
 
-
+get '/adder/:first/plus/:second' do
+  first = params[:first]
+  second = params[:second]
+  sum = first.to_i + second.to_i
+  "#{sum}"
+  #sum = params[:first] + params[:second]
+  #p sum
+  #sum = params[:no_1] + params[:no_2]
+  #answer = sum.to_s
+  #{}"The total of #{params[:no_1]} plus #{params[:no_2]} is #{answer}."
+end
 
 
 # write a basic GET route
